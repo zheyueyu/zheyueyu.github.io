@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.3.0',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: 'RFNL2Z25FJ',
+      apiKey: 'f555bd1c8546cd5021751f93d99e985e',
+      indexName: 'zoeslab',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索文章标题","hits_empty":"没有找到搜索结果: ${query}","hits_stats":"${hits} 条搜索结果"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="《点石成金》第三版，主要讲Web设计可用性。">
+<meta name="keywords" content="UI&#x2F;UX">
+<meta property="og:type" content="article">
+<meta property="og:title" content="181121_点石成金第三版(Steve Krug)">
+<meta property="og:url" content="https://zheyueyu.github.io/2018/11/21/181121-点石成金第三版-Steve-Krug/index.html">
+<meta property="og:site_name" content="Zoe&#39;s LAB">
+<meta property="og:description" content="《点石成金》第三版，主要讲Web设计可用性。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p6js15p60.bkt.clouddn.com/15422783714649.jpg">
+<meta property="og:image" content="http://p6js15p60.bkt.clouddn.com/15422788720436.jpg">
+<meta property="og:image" content="http://p6js15p60.bkt.clouddn.com/15422789234816.jpg">
+<meta property="og:image" content="http://p6js15p60.bkt.clouddn.com/15422789962071.png">
+<meta property="og:image" content="http://p6js15p60.bkt.clouddn.com/15422805096030.jpg">
+<meta property="og:image" content="http://p6js15p60.bkt.clouddn.com/15427649507767.jpg">
+<meta property="og:updated_time" content="2018-11-21T04:36:21.078Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="181121_点石成金第三版(Steve Krug)">
+<meta name="twitter:description" content="《点石成金》第三版，主要讲Web设计可用性。">
+<meta name="twitter:image" content="http://p6js15p60.bkt.clouddn.com/15422783714649.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="https://zheyueyu.github.io/2018/11/21/181121-点石成金第三版-Steve-Krug/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>181121_点石成金第三版(Steve Krug) | Zoe's LAB</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?03686ef2e13d207cff57c86e3935a0d3";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Zoe's LAB</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">个人收藏分享地</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于我</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zheyueyu.github.io/2018/11/21/181121-点石成金第三版-Steve-Krug/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zoe">
+      <meta itemprop="description" content="Less is more.">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zoe's LAB">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">181121_点石成金第三版(Steve Krug)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-21 12:32:57" itemprop="dateCreated datePublished" datetime="2018-11-21T12:32:57+08:00">2018-11-21</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/读书笔记/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/21/181121-点石成金第三版-Steve-Krug/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/11/21/181121-点石成金第三版-Steve-Krug/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/11/21/181121-点石成金第三版-Steve-Krug/" class="leancloud_visitors" data-flag-title="181121_点石成金第三版(Steve Krug)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>《点石成金》第三版，主要讲Web设计可用性。</p>
+<a id="more"></a> 
+<h1 id="《点石成金》读书笔记"><a href="#《点石成金》读书笔记" class="headerlink" title="《点石成金》读书笔记"></a>《点石成金》读书笔记</h1><h2 id="1-Krug第一定律——别让我思考"><a href="#1-Krug第一定律——别让我思考" class="headerlink" title="1 Krug第一定律——别让我思考"></a>1 Krug第一定律——别让我思考</h2><p>Web设计中的可用性原则：当用户看到页面时，它应该是一目了然，不需要花费精力去思考就知道如何使用。因为大多数人会花比我们想象中少得多的时间来浏览网页，一目了然可以让用户更容易达到目标，从而更好留存用户。</p>
+<p><strong>注意点：</strong></p>
+<ul>
+<li>明确位置和导航：使用意义明确的名称</li>
+<li>突出层级和交互动作触发点：使用外观突出的控件作为按钮或链接暗示可点击</li>
+<li>简单明了的操作：告诉用户怎么做而不是背后的原理</li>
+<li>如果不能做到页面一目了然，至少要做到“自我解释”</li>
+</ul>
+<h2 id="2-用户如何使用Web——扫描、满意即可、勉强应付"><a href="#2-用户如何使用Web——扫描、满意即可、勉强应付" class="headerlink" title="2 用户如何使用Web——扫描、满意即可、勉强应付"></a>2 用户如何使用Web——扫描、满意即可、勉强应付</h2><p><strong>用户使用Web的3个事实：</strong></p>
+<ul>
+<li>不是阅读而是扫描： 用户通常在网页上看到的只是自己感兴趣的一小部分内容；</li>
+<li>大多数时间用户会选择第一个合理的选项：花费时间和精力衡量做出最佳选择不如查看第一个合理的页面，不行再回退，且猜测可能带给用户惊喜；</li>
+<li>不会深究运作原理而是勉强应付：工作机制对大多数用户并不重要，用户发现某个事物能用会一直使用，很少会主动寻找更好的方法。</li>
+</ul>
+<h2 id="3-广告牌设计101法则——为扫描设计，不为阅读设计"><a href="#3-广告牌设计101法则——为扫描设计，不为阅读设计" class="headerlink" title="3 广告牌设计101法则——为扫描设计，不为阅读设计"></a>3 广告牌设计101法则——为扫描设计，不为阅读设计</h2><p><strong>对扫描用户的5个设计要点：</strong></p>
+<ul>
+<li>建立清楚的视觉层次：重点-突出、相关性-分组、包含性-嵌套；</li>
+<li>利用习惯用法：用户学习成本低且有效，打破习惯用法时要注意创新的方法要注意较低的学习成本且能带来较高价值；</li>
+<li>把页面划分成明确定义的区域：用户根据区域从页面中筛选关注的区域和跳过的区域；</li>
+<li>明显标识可点击的地方：在点击链接或控件上提供明显的视觉暗示；</li>
+<li>降低视觉噪声：限制视觉上突出的重点内容，降低背景和装饰的视觉效果。</li>
+</ul>
+<h2 id="4-Krug第二定律——用户喜欢无需思考、明确无误的选择，不介意点击多少次"><a href="#4-Krug第二定律——用户喜欢无需思考、明确无误的选择，不介意点击多少次" class="headerlink" title="4 Krug第二定律——用户喜欢无需思考、明确无误的选择，不介意点击多少次"></a>4 Krug第二定律——用户喜欢无需思考、明确无误的选择，不介意点击多少次</h2><p>用户不介意多少次点击，只要每次点击是不用思考的。</p>
+<p>三次无需思考、明确无误的点击相当于一次需要思考的点击。让选择变得无需思考是让网站易用的主要因素。</p>
+<p>必要的帮助具备</p>
+<h2 id="5-Krug第三定律——去掉多余文字"><a href="#5-Krug第三定律——去掉多余文字" class="headerlink" title="5 Krug第三定律——去掉多余文字"></a>5 Krug第三定律——去掉多余文字</h2><p>去掉多余文字的好处：降低页面噪声；突出有用内容；让页面更简短，让用户在页面上查看更多内容不必滚动屏幕。</p>
+<p><strong>要点：</strong></p>
+<ul>
+<li>尽量减少欢迎词</li>
+<li>通过让内容不言而喻来消除指示说明，去掉不必要的指示说明</li>
+</ul>
+<p>方法：去掉每个页面上一半的文字，再把剩下的文字去掉一半。</p>
+<h2 id="6-怎样设计“明确”、“简单”、“一致”的导航"><a href="#6-怎样设计“明确”、“简单”、“一致”的导航" class="headerlink" title="6 怎样设计“明确”、“简单”、“一致”的导航"></a>6 怎样设计“明确”、“简单”、“一致”的导航</h2><h3 id="用户使用网站导航的习惯"><a href="#用户使用网站导航的习惯" class="headerlink" title="用户使用网站导航的习惯"></a>用户使用网站导航的习惯</h3><ul>
+<li>用户对导航的依赖程度取决于对该网站/事物的熟悉度、信任度以及自身的性格和环境因素（时间、地点等）</li>
+<li>用户使用网站导航的一般流程：确定目标➡选择浏览/搜索➡操作导航浏览页面➡找不到目标离开页面</li>
+</ul>
+<h3 id="网站导航与现实导航的区别"><a href="#网站导航与现实导航的区别" class="headerlink" title="网站导航与现实导航的区别"></a>网站导航与现实导航的区别</h3><ul>
+<li>感觉不到网站内容的多少，是否涵盖目标内容</li>
+<li>感觉不到方向 - 网站层级结构</li>
+<li>感觉不到位置，不知道如何找到目标 - 主页给用户提供起始位置，这也是书签、回退常被使用的原因</li>
+</ul>
+<h3 id="导航用途"><a href="#导航用途" class="headerlink" title="导航用途"></a>导航用途</h3><ul>
+<li>帮助用户到达目的链接</li>
+<li>告诉用户当前位置</li>
+<li>告诉用户网站内容</li>
+<li>告诉用户如何使用网站，从哪里开始，能去哪里</li>
+<li>好的导航可以让用户建立网站的整体印象</li>
+</ul>
+<h3 id="持久导航的4个元素"><a href="#持久导航的4个元素" class="headerlink" title="持久导航的4个元素"></a>持久导航的4个元素</h3><p>持久导航一般会出现在网站的所有页面，除表单页面外。</p>
+<ul>
+<li>站点ID/站点LOGO</li>
+<li>实用工具</li>
+<li>搜索栏</li>
+<li>主导航</li>
+</ul>
+<p>表单页面只需要站点ID、回到主页的链接及有助于填写表单的实用工具即可，减少不必要的干扰</p>
+<h3 id="站点ID"><a href="#站点ID" class="headerlink" title="站点ID"></a>站点ID</h3><p>站点ID代表整个网站，占有最高的层级，需要突出显示。</p>
+<p><strong>方法：</strong></p>
+<ul>
+<li>使用独特字体和可识别图形</li>
+<li>放在页面上方涵盖整个页面元素</li>
+<li>通常点击站点LOGO可以回到主页</li>
+</ul>
+<h3 id="主导航（栏目）"><a href="#主导航（栏目）" class="headerlink" title="主导航（栏目）"></a>主导航（栏目）</h3><p>主导航是到达站点主要栏目的链接，是站点层次结构的最顶层。</p>
+<p><strong>方法：</strong></p>
+<ul>
+<li>大部分情况会包括二级导航</li>
+<li>可以放置主页按钮方便用户回到主页</li>
+</ul>
+<h3 id="实用工具"><a href="#实用工具" class="headerlink" title="实用工具"></a>实用工具</h3><p>实用工具是网站中不属于网站内容的工具链接。帮助用户使用站点，提供网站发布者信息。</p>
+<p><strong>方法：</strong></p>
+<ul>
+<li>通常没有主导航显眼</li>
+<li>一般持久导航只能放用户常用的4-5个实用工具，其他不常用的工具分组后放在主页上，如主页底部链接</li>
+</ul>
+<h3 id="搜索栏"><a href="#搜索栏" class="headerlink" title="搜索栏"></a>搜索栏</h3><p>大多数用户进入新站点首先查看并使用搜索功能。它包括输入框、搜索按钮、“搜索”标签。</p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>避免花哨用词</li>
+<li>避免多余的指示说明，如“输入关键字”</li>
+<li>避免在导航搜索工具中提供多个范围选项让用户思考</li>
+</ul>
+<h3 id="页面导航"><a href="#页面导航" class="headerlink" title="页面导航"></a>页面导航</h3><p>页面导航设计不良的原因：</p>
+<ul>
+<li>良好的多级导航在有限页面空间中较难设计</li>
+<li>较高层级的导航设计费时</li>
+<li>大部分认为低层级导航看起来不重要</li>
+</ul>
+<p><strong>注意：</strong>用户在底层页面与顶层页面使用时间相同，在具体设计导航样式前要先从上至下设计导航整体结构，否则后期较难更改</p>
+<h3 id="页面名称"><a href="#页面名称" class="headerlink" title="页面名称"></a>页面名称</h3><p>页面名称是网站上的路牌。</p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>每个页面都有一个页面名称</li>
+<li>页面名称应出现在合适位置，体现页面内容的嵌套关系</li>
+<li>页面名称要在视觉上强调</li>
+<li>名称要和点击进入页面的链接名称匹配或相近</li>
+</ul>
+<h3 id="位置指示器"><a href="#位置指示器" class="headerlink" title="位置指示器"></a>位置指示器</h3><p>体现用户当前位置。位置指示器设计的5种方法：</p>
+<p><img src="http://p6js15p60.bkt.clouddn.com/15422783714649.jpg" alt=""></p>
+<h3 id="面包屑"><a href="#面包屑" class="headerlink" title="面包屑"></a>面包屑</h3><p><img src="http://p6js15p60.bkt.clouddn.com/15422788720436.jpg" alt=""></p>
+<p>面包屑也是告诉用户当前位置的一种设计模式。</p>
+<p><strong>方法：</strong></p>
+<ul>
+<li>放在页面顶层</li>
+<li>使用<code>&gt;</code>对层级进行间隔</li>
+<li>加粗突出最后一个元素，暗示当前位置</li>
+</ul>
+<h3 id="Tab标签"><a href="#Tab标签" class="headerlink" title="Tab标签"></a>Tab标签</h3><p>标签是大型网站导航的上佳选择，因为：</p>
+<ul>
+<li>标签使用物理隐喻效应，让用户不用学习就能知道其含义</li>
+<li>在视觉上与页面内容区分，难以忽略</li>
+<li>能给页面增加修饰作用，且能通过灵活配置不同视觉效果标识页面的不同情况</li>
+</ul>
+<p><img src="http://p6js15p60.bkt.clouddn.com/15422789234816.jpg" alt=""></p>
+<p><strong>要点：</strong>激活的标签页位于其他标签之前，用不同颜色或外形突出，并且与底部空间相连</p>
+<h3 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h3><p><img src="http://p6js15p60.bkt.clouddn.com/15422789962071.png" alt=""></p>
+<h2 id="7-主页设计"><a href="#7-主页设计" class="headerlink" title="7 主页设计"></a>7 主页设计</h2><h3 id="主页目标"><a href="#主页目标" class="headerlink" title="主页目标"></a>主页目标</h3><ul>
+<li>传达网站的整体形象</li>
+<li>帮助用户寻找目标内容</li>
+<li>推荐用户感兴趣内容</li>
+<li>告诉用户从哪开始</li>
+<li>建立可信度和信任感</li>
+</ul>
+<h3 id="主页应包含的内容"><a href="#主页应包含的内容" class="headerlink" title="主页应包含的内容"></a>主页应包含的内容</h3><ul>
+<li>站点标识和使命：LOGO、功能</li>
+<li>站点层次：内容、功能、导航</li>
+<li>搜索</li>
+<li>导读：暗示精彩内容吸引用户</li>
+<li>内容推介：热门新闻或产品内容片段</li>
+<li>功能推介：网站个性功能推荐等</li>
+<li>适时更新的内容：排行榜、最新文章列表等</li>
+<li>交换链接：友链、合作方等</li>
+<li>快捷方式：软件方式、历史记录等</li>
+<li>注册</li>
+</ul>
+<p><img src="http://p6js15p60.bkt.clouddn.com/15422805096030.jpg" alt=""></p>
+<h3 id="设计主页要搞清楚的5个问题"><a href="#设计主页要搞清楚的5个问题" class="headerlink" title="设计主页要搞清楚的5个问题"></a>设计主页要搞清楚的5个问题</h3><ul>
+<li>这是什么网站</li>
+<li>我能在这里做什么</li>
+<li>网站上有什么内容</li>
+<li>为什么在这个网站而不是别的网站</li>
+<li>从哪里开始（搜索/浏览/查看板块）</li>
+</ul>
+<h3 id="如何传达网站的整体形象"><a href="#如何传达网站的整体形象" class="headerlink" title="如何传达网站的整体形象"></a>如何传达网站的整体形象</h3><ul>
+<li>使用口号：有效的信息传达方式，通常在靠近站点ID的地方，当网站或品牌有知名度时可不使用</li>
+<li>欢迎广告：网站简要描述，显示在主页首要位置，通常在页面上端的左边或中间</li>
+<li>“了解更多”：介绍性视频或跳转介绍页面按钮</li>
+</ul>
+<p><strong>选择口号时要注意：</strong></p>
+<ul>
+<li>清楚、准确</li>
+<li>简短，容易让人领会（6-8个英文单词即可）</li>
+<li>表述网站特点和优势</li>
+<li>避免笼统、模糊不清的描述</li>
+<li>个性、生动、俏皮</li>
+</ul>
+<h3 id="传达信息的指导原则"><a href="#传达信息的指导原则" class="headerlink" title="传达信息的指导原则"></a>传达信息的指导原则</h3><ul>
+<li>使用有限但必要的空间：保持简短，突出网站的最重要功能</li>
+<li>不要把公司使命当作欢迎广告</li>
+<li>对主页进行测试，让非内部人员使用测试首页是否达到目标</li>
+</ul>
+<h2 id="8-避免网站可用性争论的方法——测试"><a href="#8-避免网站可用性争论的方法——测试" class="headerlink" title="8 避免网站可用性争论的方法——测试"></a>8 避免网站可用性争论的方法——测试</h2><p><strong>争论在大多数时候是无效的：</strong>处于不同职位的人员，在生理上（内啡肽分泌）追求不同的工作目标，设计师追求视觉，程序员追求逻辑，且很少能改变原有看法。</p>
+<p><strong>没有普通用户，设计没有唯一的正确答案：</strong>大部分Web用户是弹性的，可以随意变化；每个用户使用Web的情况都是不一样的，用简单的喜好形容用户琐碎且无用；对于大部分Web设计来说，没有简单的正确答案，经过仔细考虑、实现和测试的设计就是好的。</p>
+<p>不要问：“大部分人是否喜欢这个设计？”，而是问：<strong>“在这个界面中这样的设计和措施会让大部分用户产生良好体验吗？”</strong></p>
+<h2 id="9-可用性测试"><a href="#9-可用性测试" class="headerlink" title="9 可用性测试"></a>9 可用性测试</h2><p><strong>可用性测试和焦点小组的区别：</strong></p>
+<ul>
+<li><strong>过程不同：</strong>焦点小组用来倾听收集用户对产品的看法和使用经验，可用性测试观察用户使用产品完成特定任务的过程，观察用户行为，检测并修复产品中让用户感到挫折的部分</li>
+<li><strong>时间不同：</strong>焦点小组适用于产品设计早期阶段，可用性测试贯穿开发和设计过程</li>
+<li><strong>作用不同：</strong>焦点小组可以在调查竞品，搜集用户建议，调查网站背后的理念和价值主张是否吸引人有所帮助，可用性测试可以用来了解网站运行情况，如何改进网站</li>
+</ul>
+<p><strong>关于测试的几个事实：</strong></p>
+<ul>
+<li>建立优秀的网站一定要测试</li>
+<li>测试一个用户比不测试好一倍</li>
+<li>项目中早点测试1位用户好过最后测试50位用户</li>
+</ul>
+<h3 id="简易可用性测试"><a href="#简易可用性测试" class="headerlink" title="简易可用性测试"></a>简易可用性测试</h3><ul>
+<li>主要目标：找到最严重的问题，并承诺下一次测试前修复</li>
+<li>测试时间：每月1次固定时间，贯穿整个开发过程</li>
+<li>测试人员：主持人1个，参与测试者3个，观察者尽量多</li>
+<li>参与者招募来源：不限目标用户</li>
+<li>测试场所：参与者与主持人-配有设备不被打扰的房间；观察者：另一间房间屏幕共享</li>
+<li>测试总结：开发团队和利益相关者（观察者）总结出的需要修复的重要问题和优先级列表，包括解决方法构想</li>
+</ul>
+<h3 id="测试时间"><a href="#测试时间" class="headerlink" title="测试时间"></a>测试时间</h3><p><strong>为什么要每个月1次固定时间？</strong></p>
+<ul>
+<li>节省时间，保持测试简单，能够坚持进行</li>
+<li>固定时间容易执行，预防开发计划偏离导致测试计划偏离</li>
+<li>1个月时间足够修复3个测试过程中发现的重要问题</li>
+<li>可以让团队成员预留出时间，增加参与机会</li>
+</ul>
+<h3 id="测试人员"><a href="#测试人员" class="headerlink" title="测试人员"></a>测试人员</h3><p><strong>为什么每轮测试理想用户数是3个人？</strong></p>
+<ul>
+<li>测试的目的是为了发现和修复可用性问题，不是采用大量样本证明结论，属于定性而不是定量测试</li>
+<li>不用发现所有问题，也没有足够资源去修复所有问题，需要把注意力集中在必须修复的严重问题上</li>
+<li>多做几次测试比一次测试中发现所有问题更实际靠谱</li>
+</ul>
+<p><strong>主持人需要什么人担任？如何做？</strong></p>
+<p>主持人需要耐心、冷静、有同理心、善于倾听，在测试中的主要工作是鼓励测试用户尝试操作，并把心理活动说出来，让观察者理解产品让使用者感到挫折的关键所在。</p>
+<p><strong>观察者是哪些人？如何做？</strong></p>
+<p>团队成员、利益相关人、各级经理、决策管理人员，尽可能多的观察者。在每场测试之间的间隔，让观察者写下自己认为的三个最重要的可用性问题，以便总结时找出需要首先修复的问题</p>
+<h3 id="测试场所"><a href="#测试场所" class="headerlink" title="测试场所"></a>测试场所</h3><p>准备安静的不被打扰的空间，一张桌子和两把椅子，以及联网的电脑设备和微型麦克风，录制用户在界面上的操作、参与者与主持人的对话作为后期演示汇报的数据来源。<br>同时可以通过屏幕共享，允许团队成员、利益相关人和有兴趣的人从另一个房间观看测试。</p>
+<h3 id="测试流程"><a href="#测试流程" class="headerlink" title="测试流程"></a>测试流程</h3><ul>
+<li>欢迎介绍：让参与者有心理准备</li>
+<li>提问：帮助参与者放松，同时了解参与者背景与使用经验</li>
+<li>主页观光：让参与者简单浏览并描述看到的网页，了解主页认知难度和参与者的专业知识</li>
+<li>任务测试：观看参与者执行不超过45分钟的任务清单，同步说出想法，执行过程中不要询问用户引导性问题</li>
+<li>问题探查：任务完成后，就测试中的问题或观察者提出的问题向参与者提问</li>
+<li>结束部分：感谢参与者并提供相应报酬</li>
+</ul>
+<p><strong>怎样选择测试任务：</strong></p>
+<ul>
+<li>草图：让参与者告诉你草图含义</li>
+<li>原型界面：准备足够多的任务清单，如创建账户/用已有用户名和密码登录/找回密码/找回用户名/为密保问题更改答案</li>
+<li>设置任务时用准确措辞描述任务，允许参与者自身决定一部分细节，尝试让参与者引入自身情感</li>
+</ul>
+<p><strong>测试过程中遇到的典型问题：</strong></p>
+<ul>
+<li>用户不清楚概念</li>
+<li>用户找不到关键词-原因：用户预测错误，或产品用词不当</li>
+<li>内容过多用户找不到重点内容-减少页面整体干扰，把重要内容在层次结构中突出</li>
+</ul>
+<blockquote>
+<p>测试脚本：<a href="http://rocketsurgerymadeeasy.com" target="_blank" rel="noopener">http://rocketsurgerymadeeasy.com</a></p>
+</blockquote>
+<h3 id="总结会"><a href="#总结会" class="headerlink" title="总结会"></a>总结会</h3><p>目标：找出最严重的可用性问题，最严重的问题最先修复。</p>
+<p><strong>如何确定需要修复的问题？</strong></p>
+<ul>
+<li><strong>提出问题：</strong>让每个观察者在每个测试过程中列举出3个最严重的问题</li>
+<li><strong>筛选问题：</strong>通过非正式投票筛选问题</li>
+<li><strong>问题评级：</strong>将筛选出来的问题按严重程度从1-10进行评级，按严重程度从上至下逐级递减，1为最严重的</li>
+<li><strong>总结问题列表：</strong>从最严重问题开始，对每个问题提出如何修复，负责人，需要的资源等，建立总结问题列表</li>
+</ul>
+<p><strong>哪些问题可以降低优先级？</strong></p>
+<ul>
+<li>对简单能够单人短时间独立修复的问题另列一份清单</li>
+<li>抵制添加功能或元素，解决用户认知问题通常是删除让人混淆的东西而不是新增注释或其他干扰元素</li>
+<li>忽略用户在不需帮助下能够自身解决的问题，如用户进入错误页面可以自己回到原有界面</li>
+</ul>
+<p>其他两种测试方法：远程屏幕共享；无人主持远程测试链接。</p>
+<h2 id="10-移动设计"><a href="#10-移动设计" class="headerlink" title="10 移动设计"></a>10 移动设计</h2><p>任何类别的设计本质是处理各种约束和妥协，达到良好的移动可用性的大多数挑战是作出良好的设计妥协。</p>
+<h3 id="移动端与桌面端产品设计的区别及注意点"><a href="#移动端与桌面端产品设计的区别及注意点" class="headerlink" title="移动端与桌面端产品设计的区别及注意点"></a>移动端与桌面端产品设计的区别及注意点</h3><ul>
+<li><strong>小屏幕上人们跳转移动速度更快，屏幕阅读量更小</strong></li>
+<li><strong>对内容的优先级排序更重视。</strong>用户经常重复的操作放在首要位置，其他操作有清晰路径到达且点击次数有限（可以先把对用户重要的功能和内容放到移动版本，再添加新内容创建桌面端）</li>
+<li><strong>对网页进行可伸缩的设计（包括动态布局、流式设计、自适应设计、响应式设计）。</strong>移动端网页允许缩放，且跳转链接能够直达目标内容，提供浏览全内容web网站的链接</li>
+<li><strong>移动端交互元素的视觉指示器更容易被隐藏。</strong>需要用明显的可视化暗示界面上用户可操作的元素</li>
+<li><strong>用户交互的方式不同。</strong>对于网页中悬停鼠标控制样式变化或链接跳转的元素，需要找到别的方式取代</li>
+<li>移动端扁平化设计可以带来干净整洁的外观，但是要保留一定的可视化元素提供可操作提示</li>
+<li><strong>需要考虑移动网络带来的大量图片无法载入的问题。</strong>移动端屏幕较小，用户等待时间忍耐程度变低</li>
+</ul>
+<h3 id="移动应用的可用性属性"><a href="#移动应用的可用性属性" class="headerlink" title="移动应用的可用性属性"></a>移动应用的可用性属性</h3><ul>
+<li>核心问题：可学习（初始打开时的帮助指导或帮助支持跳转链接）、有效的、高效的</li>
+<li>市场问题：有用的、合乎期望的</li>
+<li>可记忆：用户一般只在初始使用产品时会花时间去学习，但每次使用需要学习会让用户失去耐心</li>
+<li>让人快乐：在有用的基础上，让用户感到惊喜，开心</li>
+</ul>
+<h3 id="移动端可用性测试"><a href="#移动端可用性测试" class="headerlink" title="移动端可用性测试"></a>移动端可用性测试</h3><p>测试过程过程与网页端类似，但使用的设备和观察手段不一致：</p>
+<ul>
+<li>移动端可用性测试需要同时观察屏幕内容和用户手势-使用摄像头</li>
+<li>把摄像头连接到移动设备上，用户能够自然手持，让用户在放松情况下使用</li>
+<li>不拍人脸，防止用户分散注意力</li>
+<li>摄像头连接电脑，主持人从电脑屏幕观察录制内容（屏幕变化和操作手势），并共享给观察者</li>
+</ul>
+<p><img src="http://p6js15p60.bkt.clouddn.com/15427649507767.jpg" alt=""></p>
+<h2 id="11-提升用户好感"><a href="#11-提升用户好感" class="headerlink" title="11 提升用户好感"></a>11 提升用户好感</h2><p>Web可用性的重要组成部分是<strong>为用户考虑</strong>。</p>
+<h3 id="好感存储器"><a href="#好感存储器" class="headerlink" title="好感存储器"></a>好感存储器</h3><p>用户对网站的好感程度。</p>
+<p>用户好感存储器的特点：<strong>因人而异</strong>、<strong>可逆转</strong>、<strong>依情况而定</strong>、<strong>容易被清空</strong>。</p>
+<h3 id="降低好感的方式"><a href="#降低好感的方式" class="headerlink" title="降低好感的方式"></a>降低好感的方式</h3><ul>
+<li>隐藏用户想要的信息，如客服电话、运费、价格</li>
+<li>强制用户按系统原理操作</li>
+<li>向用户询问不必要的隐私信息</li>
+<li>敷衍和欺骗用户</li>
+<li>增加多余元素加大用户操作复杂度</li>
+<li>网站布局不好不专业</li>
+</ul>
+<h3 id="提升好感的方式"><a href="#提升好感的方式" class="headerlink" title="提升好感的方式"></a>提升好感的方式</h3><ul>
+<li>了解用户，用户操作简单容易</li>
+<li>坦诚，告诉用户关心的信息</li>
+<li>减少不必要的步骤</li>
+<li>用心设计：保证网站准确有用，提供用户关心信息，表达清楚，组织良好</li>
+<li>能解答用户的疑问：坦率、清晰且保持更新的FAQ列表</li>
+<li>为用户提供帮助</li>
+<li>容易从错误中恢复</li>
+<li>技术资源不能实现或不确定的，需告知用户并道歉</li>
+</ul>
+<h2 id="12-可访问性"><a href="#12-可访问性" class="headerlink" title="12 可访问性"></a>12 可访问性</h2><h3 id="可访问性是可用性的一部分"><a href="#可访问性是可用性的一部分" class="headerlink" title="可访问性是可用性的一部分"></a>可访问性是可用性的一部分</h3><ul>
+<li>可访问性可以让残障人士访问网络，让每个人有同等机会和权利访问信息</li>
+<li>可访问性可以让每个用户得到好的访问体验</li>
+<li>在设计过程开始就应该考虑可访问性</li>
+</ul>
+<h3 id="提升网站可访问性"><a href="#提升网站可访问性" class="headerlink" title="提升网站可访问性"></a>提升网站可访问性</h3><ul>
+<li>经常测试，去掉容易让人混淆的可用性问题</li>
+<li>为每张图片增加合适的alt文本（图片无法显示时的替代文本，参考<a href="webaim.org">webaim.org</a>）</li>
+<li>使用合适的页面标题和内容标题</li>
+<li>使表单的标签、文本框、提示文本关联起来</li>
+<li>在每页最前面增加“跳转到主要内容”的链接，直达目的内容而不用滚动屏幕</li>
+<li>所有内容提供键盘访问方式</li>
+<li>在文本和背景间设置明显对比</li>
+<li>确保使用的模版主题进行了可访问性设计</li>
+</ul>
+<blockquote>
+<p>可访问性推荐阅读：</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>Guidelines for Accessible and Usable Web Sites: Observing Users Who Work with Screen Readers; Mary Theofanos, Janice Redish.</li>
+<li>A Web for Everyone: Designing Accessible User Experience; Sarah Horton, Whitney Quesenbery.</li>
+<li>Web Accessibility: Web Standards and Regulatory Compliance; Jim Thatcher.</li>
+</ul>
+</blockquote>
+<h2 id="13-工作中的可用性"><a href="#13-工作中的可用性" class="headerlink" title="13 工作中的可用性"></a>13 工作中的可用性</h2><p>可用性测试就是通过建造更好的产品服务用户。</p>
+<h3 id="如何说服管理层为可用性工作提供支持"><a href="#如何说服管理层为可用性工作提供支持" class="headerlink" title="如何说服管理层为可用性工作提供支持"></a>如何说服管理层为可用性工作提供支持</h3><ul>
+<li>演示ROI</li>
+<li>从业务痛点、触电、KPI、CSI出发讨论可行性</li>
+</ul>
+<h3 id="工作中如何更好进行可用性测试"><a href="#工作中如何更好进行可用性测试" class="headerlink" title="工作中如何更好进行可用性测试"></a>工作中如何更好进行可用性测试</h3><ul>
+<li>让老板观看可用性测试：参与观察或在演示报告/邮件中增加视频片段和描述</li>
+<li>开始时个人进行非正式的可用性测试</li>
+<li>测试竞品</li>
+<li>用同理心理解管理层的关注点</li>
+<li>谦虚谨慎，弄清自身角色：主要任务是分享知识，而不是告诉别人应该怎么做</li>
+</ul>
+<h3 id="产品可用性的实际建议"><a href="#产品可用性的实际建议" class="headerlink" title="产品可用性的实际建议"></a>产品可用性的实际建议</h3><ul>
+<li>不要使用小而对比不强的字体</li>
+<li>不要把标签放到表单字段</li>
+<li>通过URL跟踪保留访问过的链接</li>
+<li>不要让标题漂浮在段落之间，注意亲密性</li>
+</ul>
+<blockquote>
+<p>推荐阅读：</p>
+<ul>
+<li>关于ROI：Cost-justifying Usability: An Update for the Internet Age; Randolph Bias, Deborah Mayhew.</li>
+<li>关于用户体验：It’s our research: Getting Stakeholder Buy-In for User Experience Research Projects; Tomer Sharon.</li>
+<li>单人用户体验：The User Experience Team of One: A Research and Design Survival Guide; Leah Buley.</li>
+<li>影响力; Robert Cialdini</li>
+</ul>
+</blockquote>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Zoe</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://zheyueyu.github.io/2018/11/21/181121-点石成金第三版-Steve-Krug/" title="181121_点石成金第三版(Steve Krug)">https://zheyueyu.github.io/2018/11/21/181121-点石成金第三版-Steve-Krug/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/UI-UX/" rel="tag"># UI/UX</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/09/181109-界面设计模式第二版（泰德维尔）04/" rel="next" title="181109_界面设计模式第二版（泰德维尔）04">
+                <i class="fa fa-chevron-left"></i> 181109_界面设计模式第二版（泰德维尔）04
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpeg"
+                alt="Zoe" />
+            
+              <p class="site-author-name" itemprop="name">Zoe</p>
+              <p class="site-description motion-element" itemprop="description">Less is more.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:zheyueyu@outlook.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#《点石成金》读书笔记"><span class="nav-text">《点石成金》读书笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Krug第一定律——别让我思考"><span class="nav-text">1 Krug第一定律——别让我思考</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-用户如何使用Web——扫描、满意即可、勉强应付"><span class="nav-text">2 用户如何使用Web——扫描、满意即可、勉强应付</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-广告牌设计101法则——为扫描设计，不为阅读设计"><span class="nav-text">3 广告牌设计101法则——为扫描设计，不为阅读设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Krug第二定律——用户喜欢无需思考、明确无误的选择，不介意点击多少次"><span class="nav-text">4 Krug第二定律——用户喜欢无需思考、明确无误的选择，不介意点击多少次</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Krug第三定律——去掉多余文字"><span class="nav-text">5 Krug第三定律——去掉多余文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-怎样设计“明确”、“简单”、“一致”的导航"><span class="nav-text">6 怎样设计“明确”、“简单”、“一致”的导航</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#用户使用网站导航的习惯"><span class="nav-text">用户使用网站导航的习惯</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网站导航与现实导航的区别"><span class="nav-text">网站导航与现实导航的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导航用途"><span class="nav-text">导航用途</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#持久导航的4个元素"><span class="nav-text">持久导航的4个元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#站点ID"><span class="nav-text">站点ID</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主导航（栏目）"><span class="nav-text">主导航（栏目）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实用工具"><span class="nav-text">实用工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索栏"><span class="nav-text">搜索栏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面导航"><span class="nav-text">页面导航</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面名称"><span class="nav-text">页面名称</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#位置指示器"><span class="nav-text">位置指示器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#面包屑"><span class="nav-text">面包屑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tab标签"><span class="nav-text">Tab标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#案例"><span class="nav-text">案例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-主页设计"><span class="nav-text">7 主页设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主页目标"><span class="nav-text">主页目标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主页应包含的内容"><span class="nav-text">主页应包含的内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计主页要搞清楚的5个问题"><span class="nav-text">设计主页要搞清楚的5个问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何传达网站的整体形象"><span class="nav-text">如何传达网站的整体形象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传达信息的指导原则"><span class="nav-text">传达信息的指导原则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-避免网站可用性争论的方法——测试"><span class="nav-text">8 避免网站可用性争论的方法——测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-可用性测试"><span class="nav-text">9 可用性测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简易可用性测试"><span class="nav-text">简易可用性测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试时间"><span class="nav-text">测试时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试人员"><span class="nav-text">测试人员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试场所"><span class="nav-text">测试场所</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试流程"><span class="nav-text">测试流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结会"><span class="nav-text">总结会</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-移动设计"><span class="nav-text">10 移动设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#移动端与桌面端产品设计的区别及注意点"><span class="nav-text">移动端与桌面端产品设计的区别及注意点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#移动应用的可用性属性"><span class="nav-text">移动应用的可用性属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#移动端可用性测试"><span class="nav-text">移动端可用性测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-提升用户好感"><span class="nav-text">11 提升用户好感</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#好感存储器"><span class="nav-text">好感存储器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#降低好感的方式"><span class="nav-text">降低好感的方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提升好感的方式"><span class="nav-text">提升好感的方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-可访问性"><span class="nav-text">12 可访问性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#可访问性是可用性的一部分"><span class="nav-text">可访问性是可用性的一部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提升网站可访问性"><span class="nav-text">提升网站可访问性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-工作中的可用性"><span class="nav-text">13 工作中的可用性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何说服管理层为可用性工作提供支持"><span class="nav-text">如何说服管理层为可用性工作提供支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作中如何更好进行可用性测试"><span class="nav-text">工作中如何更好进行可用性测试</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#产品可用性的实际建议"><span class="nav-text">产品可用性的实际建议</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zoe</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'xqcUt1T6Wk9BJkM0r6dOzKVF-gzGzoHsz',
+        appKey: 'ub44FHjGb1MEiCFXFtaMBOQX',
+        placeholder: 'ฅ 留个爪喵～',
+        avatar:'identicon',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("xqcUt1T6Wk9BJkM0r6dOzKVF-gzGzoHsz", "ub44FHjGb1MEiCFXFtaMBOQX");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
+            counter.save(null, {
+              success: function(counter) {
+                
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            
+              var newcounter = new Counter();
+              /* Set ACL */
+              var acl = new AV.ACL();
+              acl.setPublicReadAccess(true);
+              acl.setPublicWriteAccess(true);
+              newcounter.setACL(acl);
+              /* End Set ACL */
+              newcounter.set("title", title);
+              newcounter.set("url", url);
+              newcounter.set("time", 1);
+              newcounter.save(null, {
+                success: function(newcounter) {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                },
+                error: function(newcounter, error) {
+                  console.log('Failed to create');
+                }
+              });
+            
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('manual', "#更多");
+  
+  </script>
+
+
+  
+
+</body>
+</html>
